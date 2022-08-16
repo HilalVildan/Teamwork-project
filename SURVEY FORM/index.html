@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <style>
+      .divinfo {
+        margin-bottom: 10px;
+      }
+
+      .labelName {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CLARUSWAY SURVEY FORM</h1>
+
+    <h5>Thank you for taking the time to help us improve the platform</h5>
+
+    <div class="divinfo">
+      <div class="labelName"><label for="name">Name</label></div>
+      <div>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          value=""
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+    </div>
+    <div class="divinfo">
+      <div class="labelName"><label for="surname">Surname</label></div>
+      <div>
+        <input
+          id="surname"
+          type="text"
+          name="surname"
+          value=""
+          placeholder="Enter your Surname"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="divinfo">
+      <div class="labelName"><label for="email">Email</label></div>
+      <div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="user@clarusway.com"
+        />
+      </div>
+    </div>
+
+    <div class="divinfo">
+      <div class="labelName">
+        <label for="opt">Which option best describes your current role?</label>
+      </div>
+      <div>
+        <select style="width: 150px" name="opt" id="opt">
+          <optgroup label="Select current role">
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Full Time Job">Full Time Job</option>
+            <option value="Part Time Job ">Part Time Job</option>
+            <option value="Full Time Learner ">Full Time Learner</option>
+            <option value="Prefer not to say ">Prefer not to say</option>
+          </optgroup>
+        </select>
+      </div>
+    </div>
+
+    <div class="divinfo">
+      <div class="labelName">
+        <label>Would you recommend Clarusway to a friend?</label>
+      </div>
+      <div>
+        <input type="radio" name="friend" id="yes" value="yes" />
+        <label for="yes">Definitely, Yes</label>
+        <br /><br />
+        <input type="radio" name="friend" id="maybe" value="maybe" />
+        <label for="maybe">Maybe</label>
+        <br /><br />
+        <input type="radio" name="friend" id="notSure" value="notSure" />
+        <label for="notSure">Not sure</label>
+        <br /><br />
+        <input type="radio" name="friend" id="no" value="no" />
+        <label for="no">Definitely, No</label>
+        <br /><br />
+      </div>
+    </div>
+
+    <div class="divinfo">
+      <div class="labelName">
+        <label for="opt">What is your favorite feature of Clarusway?</label>
+      </div>
+      <div>
+        <select style="width: 150px" name="opt" id="opt">
+          <optgroup label="Select an option">
+            <option value="Courses">Courses</option>
+            <option value="Projects">Projects</option>
+            <option value="Community">Community</option>
+            <option value="Mentors ">Mentors</option>
+          </optgroup>
+        </select>
+      </div>
+    </div>
+
+    <div class="divinfo">
+      <div class="labelName">
+        <label class="labelName" for=""
+          >What would you like to see improved? (Check all that apply)</label
+        >
+      </div>
+      <div>
+        <div style="display: flex; width: 400px">
+          <div style="margin-right: 20px">
+            <input
+              id="Front-endProjects"
+              type="checkbox"
+              name="select1"
+              value="Front-endProjects"
+            />
+          </div>
+          <div><label for="Front-endProjects">Front-end Projects</label></div>
+        </div> <br>
+        <div style="display: flex; width: 400px">
+          <div style="margin-right: 20px">
+            <input
+              id="Back-endProjects"
+              type="checkbox"
+              name="select2"
+              value="Back-endProjects"
+            />
+          </div>
+          <div><label for="Back-endProjects">Back-end Projects</label></div>
+        </div> <br>
+        <div style="display: flex; width: 400px">
+          <div style="margin-right: 20px">
+            <input
+              id="DataScience"
+              type="checkbox"
+              name="select3"
+              value="DataScience"
+            />
+          </div>
+          <div><label for="DataScience">Data Science</label></div>
+        </div> <br>
+        <div style="display: flex; width: 400px">
+          <div style="margin-right: 20px">
+            <input
+              id="AdditionalCourses"
+              type="checkbox"
+              name="select4"
+              value="AdditionalCourses"
+            />
+          </div>
+          <div><label for="AdditionalCourses">Additional Courses</label></div>
+        </div> <br>
+      </div>
+    </div>
+
+
+    <div class="divinfo">
+      <div class="labelName"><label  for="comment">Any comments or suggestions?</label></div>
+      <div >
+        <textarea
+            name="comment"
+            id="comment"
+            cols="20"
+            rows="5"
+            style="resize: none"
+            placeholder="Enter your comment here...Thanxs for your comments"
+          ></textarea>
+      </div>
+    </div>
+
+
+    <div class="divinfo">
+      <div class="labelName"></div>
+      <div>
+        <input type="submit" style="height:40px ; width:100px;" value="Submit" />
+      </div>
+    </div>
+  </body>
+</html>
